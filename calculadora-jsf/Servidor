@@ -1,0 +1,6 @@
+maven
+Linea de Comandos:
+D:\Docs\Installers\jboss-as-7.1.1.Final\jboss-as-7.1.1.Final\bin
+standalone.bat --server-config=standalone.xml
+
+http://localhost:8180/calculadora-jsf/Calculadora.jsf

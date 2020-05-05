@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<ui:composition template="/templates/clearTemplate.xhtml">
+<ui:define name="tituloPagina">Clientes</ui:define>
+<ui:define name="tituloFormulario">Listado de Clientes</ui:define>
+<ui:define name="autor">Hernan Ludeña</ui:define>
+
+<ui:define name="contenido">
+	<h:form>
+		<h:panelGrid columns="2">
+			<h:outputText value="Numero 1" />			
+			<h:inputText value="#{calculadoraControlador.numero1}" />
+			
+			<h:outputText value="Numero 2" />
+			<h:inputText value="#{calculadoraControlador.numero2}" />			
+			
+			<h:outputText value="" />
+			<h:commandButton  value="Sumar" action = "#{calculadoraControlador.sumar()}"/>	
+		</h:panelGrid>
+		
+		<h:outputText value="El resultado es:" />
+	    <h:outputText value="#{calculadoraControlador.suma}" />
+
+	</h:form>
+
+</ui:define>
+</ui:composition>
+</html>
